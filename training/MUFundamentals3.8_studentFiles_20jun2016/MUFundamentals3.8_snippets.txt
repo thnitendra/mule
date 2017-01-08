@@ -1,0 +1,115 @@
+MuleSoft.U Development Fundamentals 3.8 - Snippets
+
+* MODULE 1 **********************************************************
+
+* ProgrammableWeb
+http://www.programmableweb.com/
+
+* MuleSoft Developer portal for popular APIs
+https://anypoint.mulesoft.com/apiplatform/popular#/portals
+
+* MuleSoft Developer portal for Anypoint Platform
+https://anypoint.mulesoft.com/apiplatform/anypoint-platform/#/portals
+
+* American Flights web service
+http://apdev-american-ws.cloudhub.io/api/flights
+
+* American Flights API post body
+{
+  "code": "GQ574",
+  "price": 399,
+  "departureDate": "2016/12/20",
+  "origin": "ORD",
+  "destination": "SFO",
+  "emptySeats": 200,
+  "plane": {"type": "Boeing 747", "totalSeats": 400}
+}
+
+* American Flights API
+http://apdev-american-api.cloudhub.io/flights
+
+* American Flights API client_id for APDev fictitious application
+d1374b15c6864c3682ddbed2a247a826
+
+* American Flights API client_secret for APDev fictitious application
+4a87fe7e2e43488c927372AEF981F066
+
+* MODULE 2 **********************************************************
+
+* American Flights API - /flights/{ID} get response example
+{"ID":1, "code": "ER38sd","price": 400, "departureDate": "2016/03/20", "origin": "MUA", "destination": "SFO", "emptySeats": 0, "plane": {"type": "Boeing 737", "totalSeats": 150}}
+
+* American Flights API - /flights post response example
+{"message": "Flight added (but not really)"}
+
+* American Flights API - /flights post request body example
+{"code": "ER38sd","price": 400, "departureDate": "2016/03/20", "origin": "MUA", "destination": "SFO", "emptySeats": 0, "plane": {"type": "Boeing 737", "totalSeats": 150}}
+
+* API Portal overview text
+The American Flights API is a system API for operations on the **american** table in the *training* database.
+####Supported operations####
+- Get all flights
+- Get a flight with a specific ID
+- Add a flight
+
+* Your American Flights RAML URL
+https://anypoint.mulesoft.com/apiplatform/repository/v2/organizations/6e6a026b-c4c0-40ff-b68f-deaf6d765cf1/public/apis/83592/versions/81311/files/root
+
+* Your American Flights API Portal URL
+https://anypoint.mulesoft.com/apiplatform/self-342/#/portals/organizations/6e6a026b-c4c0-40ff-b68f-deaf6d765cf1/apis/83592/versions/81311
+
+* Your client ID
+
+
+* Your client secret
+
+
+* Solution - American Flights RAML URL
+https://anypoint.mulesoft.com/apiplatform/repository/v2/organizations/fd604b43-365c-42e8-810f-733a2b7f411f/public/apis/67888/versions/70734/files/root
+
+* Solution - American Flights Portal URL
+https://anypoint.mulesoft.com/apiplatform/muletraining/#/portals/organizations/fd604b43-365c-42e8-810f-733a2b7f411f/apis/67888/versions/70734
+
+* MODULE 3 **********************************************************
+
+* MySQL database
+db.host = mudb.mulesoft-training.com
+db.port = 3306
+db.user = mule
+db.password = mule
+db.database = training
+American table: american
+American table version2: flights
+Account table: accounts
+Account list URL:  http://mu.mulesoft-training.com/essentials/accounts/show
+or http://localhost:9090/essentials/accounts/show.html
+
+* Derby database
+driverName: org.apache.derby.jdbc.ClientDriver
+url: jdbc:derby://localhost:1527/memory:training
+
+* SQL expression for American Flights API
+WHERE ID = #[message.inboundProperties.'http.uri.params'.ID]
+
+* MODULE 7 **********************************************************
+
+* United RESTful web service
+http://mu.mulesoft-training.com/essentials/united/flights
+or if using the mulesoft-training-services.jar application:
+http://localhost:9090/essentials/united/flights
+
+* Delta SOAP web service
+http://mu.mulesoft-training.com/essentials/delta?wsdl
+or if using the mulesoft-training-services.jar application:
+http://localhost:9191/essentials/delta?wsdl
+
+* MODULE 11 **********************************************************
+
+* JMS
+ActiveMQ Broker URL: tcp://54.69.115.37:61616
+or if using the mulesoft-training-services.jar application:
+tcp://localhost:61616
+
+Form URL: http://mu.mulesoft-training.com/jms/
+or if using the mulesoft-training-services.jar application:
+http://localhost:9090/essentials/jmsform.html

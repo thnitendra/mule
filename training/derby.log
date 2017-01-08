@@ -1,0 +1,14 @@
+Tue Jul 19 19:47:45 JST 2016 : Apache Derby Network Server - 10.12.1.1 - (1704137) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Tue Jul 19 19:47:45 JST 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0156-02c4-c71b-000014db3320 
+on database directory memory:/home/dev/mule/training/training with class loader org.springframework.boot.loader.LaunchedURLClassLoader@2a84aee7 
+Loaded from jar:file:/home/dev/mule/training/MUFundamentals3.8_studentFiles_20jun2016/jars/mulesoft-training-services-1.3.0.jar!/lib/derby-10.12.1.1.jar!/
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_77-b03
+user.dir=/home/dev/mule/training
+os.name=Linux
+os.arch=amd64
+os.version=3.16.0-76-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
